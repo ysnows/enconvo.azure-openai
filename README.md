@@ -1,17 +1,17 @@
-### Enconvo  Openai-chatgpt
+### Enconvo Azure Openai 
 
 
 
 
-##### 安装
+##### Install 
 
-Enconvo插件商店中找到 Openai-chatgpt，点击安装即可。
+Find Azure OpenAI in the Enconvo plugin store and click install.
 
 
 
-##### 不知道Enconvo?
+##### Don't know Enconvo?
 
-看这里： https://enconvo.com/
+Look here.： https://enconvo.com/
 
 
 

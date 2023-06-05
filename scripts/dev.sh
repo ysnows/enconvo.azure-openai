@@ -2,7 +2,7 @@ extension=enconvo.azure-openai
 deployRootDir="/Users/ysnows/Library/Application Support/Enconvo/extension/"
 deployDir="/Users/ysnows/Library/Application Support/Enconvo/extension/${extension}"
 # 动态获取当前脚本所在目录
-sourceDir=$(cd ..; pwd)
+sourceDir=$(pwd)
 
 rm -rf "$deployDir"
 mkdir -p "$deployDir"

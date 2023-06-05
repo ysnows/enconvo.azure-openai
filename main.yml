@@ -1,4 +1,4 @@
-name: Chat GPT
+name: Azure Openai
 version: 0.0.4
 author: ysnows
 on: {}
@@ -13,7 +13,7 @@ steps:
       messages: []
 extensionId: enconvo.azure-openai
 logo: ns:translate
-description: Chat GPT - OpenAi
+description: Azure Openai
 async: false
 homePage: https://github.com/ysnows/enconvo.azure-openai
 appCast: https://raw.githubusercontent.com/ysnows/enconvo.azure-openai/main/appcast.json
@@ -28,15 +28,15 @@ options:
     defaultValue: ''
     menuValues: []
     desc: ''
-    placeholderText: Openai apikey
+    placeholderText: Azure Openai apikey
     textWidth: 3.6e+2
   - identifier: model
     type: menu
     title: Model
-    defaultValue: gpt-3.5-turbo
+    defaultValue: gpt-35-turbo
     menuValues:
-    - title: gpt-3.5-turbo
-      value: gpt-3.5-turbo
+    - title: gpt-35-turbo
+      value: gpt-35-turbo
     - title: gpt-4
       value: gpt-4
     - title: gpt-4-32k
@@ -62,12 +62,12 @@ options:
     desc: "\u5207\u6362zh_CN\u8BED\u97F3\u89D2\u8272"
     placeholderText: ''
     textWidth: 2e+2
-  - identifier: customRequest
+  - identifier: endpoint
     type: text
-    title: Custom Request
-    defaultValue: https://api.openai.com/v1/chat/completions
+    title: Endpoint
+    defaultValue:
     menuValues: []
     desc: ''
-    placeholderText: customised request url
+    placeholderText: endpoint url
     textWidth: 3.6e+2
   desc: "\u9009\u62E9\u5BF9\u5E94\u8BED\u8A00\u7684\u8BED\u97F3"

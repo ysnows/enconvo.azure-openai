@@ -3,18 +3,17 @@ function main(text, contextText, completion, streamHandler) {
     (async () => {
         try {
             try {
-                console.log("hello:"+JSON.stringify($option))
+                console.log("hello:" + JSON.stringify($option))
                 var completeContent = ""
                 const resp = await $http.stream(
-                    $option.customRequest,
+                   `${$option.endpoint}/openai/deployments/${$option.model}/chat/completions?api-version=2023-03-15-preview`,
                     {
                         method: "POST",
                         header: {
                             'Content-Type': 'application/json',
-                            'Authorization': 'Bearer ' + $option.apiKey,
+                            'api-key': $option.apiKey,
                         },
                         body: {
-                            "model": $option.model,
                             "temperature": parseFloat($option.temperature) || 1.0,
                             "stream": true,
                             "messages": contextText.value.messages,
