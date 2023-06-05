@@ -1,0 +1,11 @@
+{
+  "identifier": "enconvo.chatgpt",
+  "versions": [
+    {
+      "version": "0.0.4",
+      "desc": "feat: 1. 0.0.4",
+      "url": "https://github.com/ysnows/enconvo-chatgpt-offical/releases/download/v0.0.4/enconvo-chatgpt-offical.enconvoplugin",
+      "minAppVersion": "1.2.1"
+    }
+  ]
+}

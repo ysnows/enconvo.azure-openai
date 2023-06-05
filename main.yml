@@ -1,0 +1,73 @@
+name: Chat GPT
+version: 0.0.4
+author: ysnows
+on: {}
+steps:
+- name: ''
+  uses: javascript
+  env:
+    JSFilePath:
+      type: file-path
+      value: main.js
+      sort: 0
+      messages: []
+extensionId: enconvo.chatgpt
+logo: ns:translate
+description: Chat GPT - OpenAi
+async: false
+homePage: https://github.com/ysnows/enconvo-chatgpt-offical
+appCast: https://raw.githubusercontent.com/ysnows/enconvo-chatgpt-offical/main/appcast.json
+minAppVersion: 1.2.1
+flowType: llmEngine
+options:
+- title: Model Settings
+  items:
+  - identifier: apiKey
+    type: secure
+    title: ApiKey
+    defaultValue: ''
+    menuValues: []
+    desc: ''
+    placeholderText: Openai apikey
+    textWidth: 3.6e+2
+  - identifier: model
+    type: menu
+    title: Model
+    defaultValue: gpt-3.5-turbo
+    menuValues:
+    - title: gpt-3.5-turbo
+      value: gpt-3.5-turbo
+    - title: gpt-4
+      value: gpt-4
+    - title: gpt-4-32k
+      value: gpt-4-32k
+    desc: "\u5207\u6362zh_CN\u8BED\u97F3\u89D2\u8272"
+    placeholderText: ''
+    textWidth: 2e+2
+  - identifier: temperature
+    type: menu
+    title: Temperature
+    defaultValue: '1.0'
+    menuValues:
+      - title: 'none'
+        value: '0.0'
+      - title: 'low'
+        value: '0.5'
+      - title: 'medium'
+        value: '1.0'
+      - title: 'high'
+        value: '1.5'
+      - title: 'maximum'
+        value: '2.0'
+    desc: "\u5207\u6362zh_CN\u8BED\u97F3\u89D2\u8272"
+    placeholderText: ''
+    textWidth: 2e+2
+  - identifier: customRequest
+    type: text
+    title: Custom Request
+    defaultValue: https://api.openai.com/v1/chat/completions
+    menuValues: []
+    desc: ''
+    placeholderText: customised request url
+    textWidth: 3.6e+2
+  desc: "\u9009\u62E9\u5BF9\u5E94\u8BED\u8A00\u7684\u8BED\u97F3"
