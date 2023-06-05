@@ -1,6 +1,11 @@
 {
   "identifier": "enconvo.azure-openai",
   "versions": [
-
+    {
+      "version": "0.0.1",
+      "desc": "feat: 1. openai集成",
+      "url": "https://github.com/ysnows/enconvo.azure-openai/releases/download/v0.0.1/enconvo.azure-openai.enconvoplugin",
+      "minAppVersion": "1.2.1"
+    }
   ]
 }
