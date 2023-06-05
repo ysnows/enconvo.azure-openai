@@ -11,12 +11,12 @@ steps:
       value: main.js
       sort: 0
       messages: []
-extensionId: enconvo.chatgpt
+extensionId: enconvo.azure-openai
 logo: ns:translate
 description: Chat GPT - OpenAi
 async: false
-homePage: https://github.com/ysnows/enconvo-chatgpt-offical
-appCast: https://raw.githubusercontent.com/ysnows/enconvo-chatgpt-offical/main/appcast.json
+homePage: https://github.com/ysnows/enconvo.azure-openai
+appCast: https://raw.githubusercontent.com/ysnows/enconvo.azure-openai/main/appcast.json
 minAppVersion: 1.2.1
 flowType: llmEngine
 options:
