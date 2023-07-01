@@ -1,5 +1,5 @@
 name: Azure Openai
-version: 0.0.2
+version: 0.0.3
 author: ysnows
 on: {}
 steps:
@@ -37,10 +37,14 @@ options:
     menuValues:
     - title: gpt-35-turbo
       value: gpt-35-turbo
+    - title: gpt-35-turbo-16k
+      value: gpt-35-turbo-16k
     - title: gpt-4
       value: gpt-4
     - title: gpt-4-32k
       value: gpt-4-32k
+    - title: custom
+      value: custom
     desc: "\u5207\u6362zh_CN\u8BED\u97F3\u89D2\u8272"
     placeholderText: ''
     textWidth: 2e+2
