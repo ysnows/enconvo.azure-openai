@@ -68,7 +68,7 @@ options:
     textWidth: 2e+2
   - identifier: endpoint
     type: text
-    title: Endpoint
+    title: Base Url
     defaultValue:
     menuValues: []
     desc: ''
@@ -77,9 +77,9 @@ options:
   - identifier: api_version
     type: text
     title: Api Version
-    defaultValue:
+    defaultValue: 2023-03-15-preview
     menuValues: []
     desc: ''
-    placeholderText: endpoint url
+    placeholderText: Api Version
     textWidth: 3.6e+2
   desc: "\u9009\u62E9\u5BF9\u5E94\u8BED\u8A00\u7684\u8BED\u97F3"
