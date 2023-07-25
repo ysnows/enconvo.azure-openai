@@ -1,3 +1,5 @@
 .idea/
 .DS_Store
 audio.*
+dist/
+node_modules/
