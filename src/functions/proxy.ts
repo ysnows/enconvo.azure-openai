@@ -21,14 +21,7 @@ export async function proxy(request: HttpRequest, context: InvocationContext): P
     //     "top_p": 1
     // }
 
-    // const response = await fetch("https://ai.openreader.xyz/v1/chat/completions", {
-    //     "method": "POST",
-    //     "headers": {
-    //         "Content-Type": "application/json",
-    //         "Authorization": "Bearer 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"
-    //     },
-    //     "body": JSON.stringify(body)
-    // })
+
     const body = {
         "messages": [
             {
@@ -46,6 +39,9 @@ export async function proxy(request: HttpRequest, context: InvocationContext): P
         "stream": false
     }
 
+    const apiKey = process.env.ANTHROPIC_API_KEY
+    console.log("process.env.ANTHROPIC_API_KEY", process.env.ANTHROPIC_API_KEY)
+
 
     const response = await fetch("https://api.anthropic.com/v1/messages", {
         "method": "POST",
@@ -53,7 +49,7 @@ export async function proxy(request: HttpRequest, context: InvocationContext): P
             "Accept": "application/json",
             "Anthropic-Version": "2023-06-01",
             "Content-Type": "application/json",
-            "X-Api-Key": "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"
+            "X-Api-Key": `${apiKey}`
         },
         "body": JSON.stringify(body)
     })
